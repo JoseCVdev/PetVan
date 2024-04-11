@@ -1066,6 +1066,36 @@ button{
   border-radius: 100px 100px 100px 300px;
 }
 
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-  background-color: transparent !important;
+.bs-stepper .step-trigger {
+    flex-wrap: nowrap !important;
+}
+
+
+/* STEPPER */
+
+
+
+input[disabled] {
+    /* Estilos generales */
+    background-color: #dddddd !important; /* Cambia el color de fondo */
+    /* Otros estilos según tus necesidades */
+  }
+
+.content-card-pago {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card-pago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.card-pago-description {
+    display: flex;
+    gap: 20px;
 }

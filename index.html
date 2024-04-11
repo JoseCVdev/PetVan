@@ -124,16 +124,16 @@
                 </div>
                 <div class="solicitar-traslado-formulario">
                   <span class="solicitar-traslado-formulario-title">Solicite su traslado</span>
-                  <form>
+                  <form action="">
                     <div style="display: flex; gap: 15px">
-                      <input type="text" placeholder="Desde" id="nameField">
-                      <input type="text" placeholder="Hasta" id="nameField">
+                      <input type="text" placeholder="Desde" id="txt_desde_index">
+                      <input type="text" placeholder="Hasta" id="txt_hasta_index">
                     </div>
                     <div  style="display: flex; gap: 15px">
-                      <input type="text" placeholder="Celular" id="nameField">
-                      <input type="text" placeholder="Fecha y Hora" id="nameField">
+                      <input type="text" placeholder="Celular" id="txt_celular_index">
+                      <input type="datetime-local" placeholder="Fecha y Hora" id="txt_fecha_hora_index">
                     </div>
-                    <button class="button button-outline" style="float: right">Solicitar</button>
+                    <button class="button button-outline" style="float: right" id="btn_solicitar">Solicitar</button>
                   </form>
                 </div>
               </div>
@@ -161,13 +161,13 @@
               Acerca de Nosotros
             </h2>
             <p>
-              En PetCabs, nos enorgullecemos de ofrecer un servicio de transporte seguro y confiable para tus compañeros peludos. Fundada por amantes de los animales, nuestra empresa tiene como objetivo principal brindar comodidad y tranquilidad tanto para ti como para tu mascota
+              En PetVan, nos enorgullecemos de ofrecer un servicio de transporte seguro y confiable para tus compañeros peludos. Fundada por amantes de los animales, nuestra empresa tiene como objetivo principal brindar comodidad y tranquilidad tanto para ti como para tu mascota
             </p>
             <p>
-              Nos comprometemos a brindar un servicio excepcional en todo momento, priorizando la seguridad y el bienestar de tu mascota. Con PetCabs, puedes tener la tranquilidad de que tu amigo peludo estará en buenas manos en cada viaje.
+              Nos comprometemos a brindar un servicio excepcional en todo momento, priorizando la seguridad y el bienestar de tu mascota. Con PetVan, puedes tener la tranquilidad de que tu amigo peludo estará en buenas manos en cada viaje.
             </p>
             <p>
-              ¡Permítenos ser tu opción de transporte para mascotas y experimenta la diferencia con PetCabs hoy mismo!
+              ¡Permítenos ser tu opción de transporte para mascotas y experimenta la diferencia con PetVan hoy mismo!
             </p>
           </div>
         </div>
@@ -366,45 +366,6 @@
     </div>
   </section>
 
-  <!-- end client section -->
-
-  <!-- contact section -->
-
-  <!-- <section class="contact_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Any Problems <br>
-          Any Questions
-        </h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5  offset-md-1">
-          <div class="contact_form">
-            <h4>
-              Get In touch
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Phone Number">
-              <input type="text" placeholder="Message" class="message_input">
-              <button>Send</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/contact-img.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- end contact section -->
-
-  <!-- app section -->
 
   <section class="app_section layout_padding2">
     <div class="container">
@@ -449,136 +410,6 @@
     </div>
   </section>
 
-  <!-- end app section -->
-
-  <!-- why section -->
-
-  <!-- <section class="why_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Why <br>
-          Choose Us
-        </h2>
-      </div>
-      <div class="why_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/delivery-man-white.png" alt="" class="img-1">
-            <img src="images/delivery-man-black.png" alt="" class="img-2">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Best Drivers
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/shield-white.png" alt="" class="img-1">
-            <img src="images/shield-black.png" alt="" class="img-2">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Safe and Secure
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/repairing-service-white.png" alt="" class="img-1">
-            <img src="images/repairing-service-black.png" alt="" class="img-2">
-          </div>
-          <div class="detail-box">
-            <h5>
-              24x7 support
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end why section -->
-
-  <!-- info section -->
-
-  <!-- <section class="info_section layout_padding-top layout_padding2-bottom">
-    <div class="container">
-      <div class="box">
-        <div class="info_form">
-          <h4>
-            Subscribe Our Newsletter
-          </h4>
-          <form action="">
-            <input type="text" placeholder="Enter your email">
-            <div class="d-flex justify-content-end">
-              <button>
-
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="info_links">
-          <ul>
-            <li class=" ">
-              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="">
-              <a class="" href="about.html"> About</a>
-            </li>
-            <li class="">
-              <a class="" href="service.html"> Services </a>
-            </li>
-            <li class="">
-              <a class="" href="news.html"> News</a>
-            </li>
-            <li class="">
-              <a class="" href="contact.html">Contact Us</a>
-            </li>
-            <li class="">
-              <a class="" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-        <div class="info_social">
-          <div>
-            <a href="">
-              <img src="images/fb.png" alt="">
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <img src="images/twitter.png" alt="">
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <img src="images/linkedin.png" alt="">
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <img src="images/instagram.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- end info section -->
-
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <div class="container">
@@ -593,9 +424,8 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- owl carousel script -->
   <script type="text/javascript">
