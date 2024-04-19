@@ -59,6 +59,19 @@ $(document).ready(function () {
 
 })
 
+$('#confirmar_dueño').change(function() {
+    var valorCheckbox = $(this).prop('checked');
+    
+    if (valorCheckbox) {
+        $("#txt_recepcionista_mascota").prop("disabled", false);
+        $("#txt_recepcionista_celular").prop("disabled", false);
+    } else {
+        $("#txt_recepcionista_mascota").prop("disabled", true);
+        $("#txt_recepcionista_celular").prop("disabled", true);
+    }
+
+});
+
 
 function irPasoUno() {
     stepper.to(1);

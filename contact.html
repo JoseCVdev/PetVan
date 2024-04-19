@@ -12,9 +12,9 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>PetVan</title>
+  <title>PetMovers</title>
 
-
+  <link rel="icon" type="image/png" href="images/coche-favicon-bg.png">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -23,7 +23,8 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style-contact.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -45,7 +46,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo-petvan.png" style="width: 140px;">
+            <img src="images/Pet_Movers_V.png" style="width: 140px;">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,7 +70,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Reservas Online</a>
                 </li>
-               
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Preguntas Frecuentes</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -85,10 +88,10 @@
             <div class="box">
               <div class="detail-box">
                 <h4>
-                  Bienvenido a PETVAN
+                  Bienvenido a PETMOVERS
                 </h4>
                 <h1>
-                  Tu mejor elección
+                  Transporte para perros y gatos
                 </h1>
               </div>
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -156,8 +159,8 @@
                         <option value="0">-Seleccione-</option>
                         <option value="perros">Perros</option>
                         <option value="gatos">Gatos</option>
-                        <option value="hamsters">Hamsters</option>
-                        <option value="otros">Otros</option>
+                        <!-- <option value="hamsters">Hamsters</option> -->
+                        <!-- <option value="otros">Ambos</option> -->
                       </select> 
                     </div>
                     <div class="col-md-6">
@@ -181,8 +184,8 @@
                   <div class="row">
                     <div class="col-md-4" style="margin-top: 8px;">
                       <div style="display: flex; flex-direction: row; align-items: center; gap: 20px">
-                        <label style="float: right;" for="confirmField">Sin dueño</label>
-                        <input type="checkbox" id="confirmField" style="margin-top: 10px;">                        
+                        <label style="float: right;" for="confirmar_dueño">Sin dueño</label>
+                        <input type="checkbox" id="confirmar_dueño" style="margin-top: 10px;">                        
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -251,7 +254,7 @@
                       </div>
                     </div>
                     <div class="col-md-5">
-                      <label style="margin-top: 4px; font-size: 20px; float: right;" for="confirmField">S/. 250.00</label>
+                      <label style="margin-top: 4px; font-size: 20px; float: right;" for="confirmField">S/. 25.00</label>
                     </div>
                   </div>
                   <br>
@@ -263,7 +266,7 @@
                 <div id="pago-part" class="content" role="tabpanel" aria-labelledby="pago-part-trigger">
 
                   <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <h2>COSTO TOTAL: &nbsp;<h2 style="font-weight: bold;">S/. 250.00</h2></h2>
+                    <h2>COSTO TOTAL: &nbsp;<h2 style="font-weight: bold;">S/. 25.00</h2></h2>
                   </div>
                   <br>
                   <div class="content-card-pago">
@@ -306,7 +309,8 @@
 
                   </div>
                   
-                  <div style="display: flex; justify-content: center;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <button class="button button-outline mt-4" style="float: left;" id="btn_return_step_two"><i class="fa-solid fa-arrow-left"></i> ANTERIOR</button>
                     <button class="button button-outline mt-4" id="btn_step_two"><i class="fa-solid fa-credit-card"></i> PAGAR</button>
                   </div>
 
