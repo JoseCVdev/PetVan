@@ -394,6 +394,29 @@ a:focus {
   border-radius: 10px;
 }
 
+.about_section .img-box-v {
+  padding: 75px 45px;
+}
+
+.about_section .img-box-v img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.about_section .img-box-v::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 95%;
+  background-color: #282828;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
 .service_section {
   width: 95%;
   margin: auto;
